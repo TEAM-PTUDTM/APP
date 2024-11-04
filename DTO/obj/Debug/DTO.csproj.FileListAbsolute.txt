@@ -1,0 +1,7 @@
+D:\Application\DTO\bin\Debug\DTO.dll.config
+D:\Application\DTO\bin\Debug\DTO.dll
+D:\Application\DTO\bin\Debug\DTO.pdb
+D:\Application\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\Application\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\Application\DTO\obj\Debug\DTO.dll
+D:\Application\DTO\obj\Debug\DTO.pdb

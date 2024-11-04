@@ -1,0 +1,10 @@
+D:\Application\DAL\bin\Debug\DAL.dll
+D:\Application\DAL\bin\Debug\DAL.pdb
+D:\Application\DAL\bin\Debug\DTO.dll
+D:\Application\DAL\bin\Debug\DTO.pdb
+D:\Application\DAL\bin\Debug\DTO.dll.config
+D:\Application\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\Application\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\Application\DAL\obj\Debug\DAL.csproj.Up2Date
+D:\Application\DAL\obj\Debug\DAL.dll
+D:\Application\DAL\obj\Debug\DAL.pdb

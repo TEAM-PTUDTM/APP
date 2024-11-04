@@ -1,0 +1,10 @@
+D:\Application\component\bin\Debug\component.dll
+D:\Application\component\bin\Debug\component.pdb
+D:\Application\component\bin\Debug\Guna.UI2.dll
+D:\Application\component\obj\Debug\component.csproj.AssemblyReference.cache
+D:\Application\component\obj\Debug\component.UC_ProductCart.resources
+D:\Application\component\obj\Debug\component.csproj.GenerateResource.cache
+D:\Application\component\obj\Debug\component.csproj.CoreCompileInputs.cache
+D:\Application\component\obj\Debug\component.csproj.Up2Date
+D:\Application\component\obj\Debug\component.dll
+D:\Application\component\obj\Debug\component.pdb

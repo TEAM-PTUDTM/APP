@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{202B28E4-9CED-4D88-B6AF-AAF5CDC43212}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GUI</RootNamespace>
+    <AssemblyName>GUI</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BLL">
+      <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
+    </Reference>
+    <Reference Include="component">
+      <HintPath>..\component\bin\Debug\component.dll</HintPath>
+    </Reference>
+    <Reference Include="DTO">
+      <HintPath>..\DTO\bin\Debug\DTO.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CategoryGUI\FormCategoryType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryGUI\FormCategoryType.Designer.cs">
+      <DependentUpon>FormCategoryType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryGUI\FormCategory_Color.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryGUI\FormCategory_Color.Designer.cs">
+      <DependentUpon>FormCategory_Color.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryGUI\FormCategory_Size.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryGUI\FormCategory_Size.Designer.cs">
+      <DependentUpon>FormCategory_Size.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutGUI\FormCategoryLayout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutGUI\FormCategoryLayout.Designer.cs">
+      <DependentUpon>FormCategoryLayout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LayoutGUI\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutGUI\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS_GUI\FormPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS_GUI\FormPOS.Designer.cs">
+      <DependentUpon>FormPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductGUI\FormProductDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductGUI\FormProductDetail.Designer.cs">
+      <DependentUpon>FormProductDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductGUI\FormProductDetailPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductGUI\FormProductDetailPOS.Designer.cs">
+      <DependentUpon>FormProductDetailPOS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductGUI\FormProductList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductGUI\FormProductList.Designer.cs">
+      <DependentUpon>FormProductList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductGUI\ProductDetailQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductGUI\ProductDetailQuantity.Designer.cs">
+      <DependentUpon>ProductDetailQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CategoryGUI\FormCategoryType.resx">
+      <DependentUpon>FormCategoryType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryGUI\FormCategory_Color.resx">
+      <DependentUpon>FormCategory_Color.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CategoryGUI\FormCategory_Size.resx">
+      <DependentUpon>FormCategory_Size.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutGUI\FormCategoryLayout.resx">
+      <DependentUpon>FormCategoryLayout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LayoutGUI\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POS_GUI\FormPOS.resx">
+      <DependentUpon>FormPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductGUI\FormProductDetail.resx">
+      <DependentUpon>FormProductDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductGUI\FormProductDetailPOS.resx">
+      <DependentUpon>FormProductDetailPOS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductGUI\FormProductList.resx">
+      <DependentUpon>FormProductList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductGUI\ProductDetailQuantity.resx">
+      <DependentUpon>ProductDetailQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\icons8-add-100 %281%29.png" />
+    <Content Include="Resources\icons8-add-100.png" />
+    <Content Include="Resources\icons8-cancel-100.png" />
+    <Content Include="Resources\icons8-category-100.png" />
+    <Content Include="Resources\icons8-category-1001.png" />
+    <Content Include="Resources\icons8-combo-chart-100.png" />
+    <Content Include="Resources\icons8-delete-100 %281%29.png" />
+    <Content Include="Resources\icons8-delete-100 %282%29.png" />
+    <Content Include="Resources\icons8-delete-100.png" />
+    <Content Include="Resources\icons8-detail-100 %281%29.png" />
+    <Content Include="Resources\icons8-detail-100.png" />
+    <Content Include="Resources\icons8-edit-100 %281%29.png" />
+    <Content Include="Resources\icons8-edit-100.png" />
+    <Content Include="Resources\icons8-employees-100.png" />
+    <Content Include="Resources\icons8-image-100.png" />
+    <Content Include="Resources\icons8-invoice-100.png" />
+    <Content Include="Resources\icons8-log-out-100.png" />
+    <Content Include="Resources\icons8-online-store-100 %281%29.png" />
+    <Content Include="Resources\icons8-online-store-100.png" />
+    <Content Include="Resources\icons8-open-pane-100.png" />
+    <Content Include="Resources\icons8-pos-100.png" />
+    <Content Include="Resources\icons8-save-100.png" />
+    <Content Include="Resources\icons8-search-100.png" />
+    <Content Include="Resources\icons8-shopping-cart-100.png" />
+    <Content Include="Resources\icons8-update-100 %281%29.png" />
+    <Content Include="Resources\icons8-update-100.png" />
+    <Content Include="Resources\icons8-user-100.png" />
+    <Content Include="Resources\icons8-voucher-100.png" />
+    <Content Include="Resources\logo_login.jpg" />
+    <Content Include="Resources\product_fashion.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

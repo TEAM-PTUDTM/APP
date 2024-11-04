@@ -1,0 +1,12 @@
+D:\Application\BLL\bin\Debug\BLL.dll
+D:\Application\BLL\bin\Debug\BLL.pdb
+D:\Application\BLL\bin\Debug\DAL.dll
+D:\Application\BLL\bin\Debug\DTO.dll
+D:\Application\BLL\bin\Debug\DAL.pdb
+D:\Application\BLL\bin\Debug\DTO.pdb
+D:\Application\BLL\bin\Debug\DTO.dll.config
+D:\Application\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+D:\Application\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+D:\Application\BLL\obj\Debug\BLL.csproj.Up2Date
+D:\Application\BLL\obj\Debug\BLL.dll
+D:\Application\BLL\obj\Debug\BLL.pdb
