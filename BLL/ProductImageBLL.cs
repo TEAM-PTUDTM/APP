@@ -10,29 +10,35 @@ namespace BLL
 {
     public class ProductImageBLL
     {
-        ProductImage ProductImageDAL = new ProductImage();
-        public List<hinhanh> getProductImage()
+        private readonly ProductImage ProductImageDAL = new ProductImage();
+
+        public async Task<List<hinhanh>> getProductImage()
         {
-            return ProductImageDAL.getImageProduct();
+            return await ProductImageDAL.getImageProduct();
         }
-        public bool deleteProductImage(int id)
+        public async Task<bool> addImageProduct(hinhanh hinhanh)
         {
-            return ProductImageDAL.deleteImageProduct(id);
+            return await ProductImageDAL.addImageProduct(hinhanh);
         }
-        public bool updateProductImage(hinhanh img)
+        public async Task<bool> deleteProductImage(int id)
         {
-            return ProductImageDAL.updateImageProduct(img);
+            return await ProductImageDAL.deleteImageProduct(id);
         }
-        public bool checkPrymaryID(int id)
+
+        public async Task<bool> updateProductImage(hinhanh img)
         {
-            var ProductImage = ProductImageDAL.findByIdImageProduct(id);
-            if (ProductImage != null)
-                return true;
-            return false;
+            return await ProductImageDAL.updateImageProduct(img);
         }
-        public List<hinhanh> getImageByMaSP(int masp)
+
+        public async Task<bool> checkPrimaryID(int id)
         {
-            return ProductImageDAL.findByMaSP(masp);
+            var productImage = await ProductImageDAL.findByIdImageProduct(id);
+            return productImage != null;
+        }
+
+        public async Task<List<hinhanh>> getImageByMaSP(int masp)
+        {
+            return await ProductImageDAL.findByMaSP(masp);
         }
     }
 }

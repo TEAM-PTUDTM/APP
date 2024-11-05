@@ -33,10 +33,10 @@
             this.btn_ProductQuatity = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.btn_detail = new Guna.UI2.WinForms.Guna2GradientTileButton();
             this.label_Sale = new System.Windows.Forms.Label();
-            this.pictureBox_Url_Img = new System.Windows.Forms.PictureBox();
             this.label_Price = new System.Windows.Forms.Label();
             this.Lable_NameProduct = new System.Windows.Forms.Label();
             this.lable_discount = new System.Windows.Forms.Label();
+            this.pictureBox_Url_Img = new System.Windows.Forms.PictureBox();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_Url_Img)).BeginInit();
             this.SuspendLayout();
@@ -56,8 +56,9 @@
             this.guna2ShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2ShadowPanel1.Name = "guna2ShadowPanel1";
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.guna2ShadowPanel1.Size = new System.Drawing.Size(368, 107);
+            this.guna2ShadowPanel1.Size = new System.Drawing.Size(373, 109);
             this.guna2ShadowPanel1.TabIndex = 25;
+            this.guna2ShadowPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2ShadowPanel1_Paint);
             // 
             // btn_ProductQuatity
             // 
@@ -112,17 +113,6 @@
             this.label_Sale.TabIndex = 22;
             this.label_Sale.Text = "20%";
             // 
-            // pictureBox_Url_Img
-            // 
-            this.pictureBox_Url_Img.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Url_Img.Image")));
-            this.pictureBox_Url_Img.Location = new System.Drawing.Point(13, 12);
-            this.pictureBox_Url_Img.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox_Url_Img.Name = "pictureBox_Url_Img";
-            this.pictureBox_Url_Img.Size = new System.Drawing.Size(47, 81);
-            this.pictureBox_Url_Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox_Url_Img.TabIndex = 17;
-            this.pictureBox_Url_Img.TabStop = false;
-            // 
             // label_Price
             // 
             this.label_Price.AutoSize = true;
@@ -158,13 +148,24 @@
             this.lable_discount.TabIndex = 19;
             this.lable_discount.Text = "198000 vnd";
             // 
+            // pictureBox_Url_Img
+            // 
+            this.pictureBox_Url_Img.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_Url_Img.Image")));
+            this.pictureBox_Url_Img.Location = new System.Drawing.Point(13, 12);
+            this.pictureBox_Url_Img.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox_Url_Img.Name = "pictureBox_Url_Img";
+            this.pictureBox_Url_Img.Size = new System.Drawing.Size(47, 81);
+            this.pictureBox_Url_Img.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox_Url_Img.TabIndex = 17;
+            this.pictureBox_Url_Img.TabStop = false;
+            // 
             // UC_ProductCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2ShadowPanel1);
             this.Name = "UC_ProductCart";
-            this.Size = new System.Drawing.Size(405, 143);
+            this.Size = new System.Drawing.Size(381, 117);
             this.Load += new System.EventHandler(this.UC_ProductCart_Load);
             this.guna2ShadowPanel1.ResumeLayout(false);
             this.guna2ShadowPanel1.PerformLayout();
@@ -179,9 +180,9 @@
         private Guna.UI2.WinForms.Guna2GradientTileButton btn_ProductQuatity;
         private Guna.UI2.WinForms.Guna2GradientTileButton btn_detail;
         private System.Windows.Forms.Label label_Sale;
-        private System.Windows.Forms.PictureBox pictureBox_Url_Img;
         private System.Windows.Forms.Label label_Price;
         private System.Windows.Forms.Label Lable_NameProduct;
         private System.Windows.Forms.Label lable_discount;
+        private System.Windows.Forms.PictureBox pictureBox_Url_Img;
     }
 }

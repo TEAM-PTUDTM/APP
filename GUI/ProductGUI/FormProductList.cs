@@ -44,14 +44,14 @@ namespace GUI.ProductGUI
                     Sale = (decimal)product.PhanTramGiamGia,
                     Size = new System.Drawing.Size(itemWidth, itemHeight), 
                 };
-
-
+                productItem.DetailButtonClick += ProductItem_DetailButtonClick; ;
+                productItem.SetFormProductDetail(typeof(FormProductDetail));
                 //var image = imageService.GetFirstImageByMaSP(product.MaSP);
-
                 //if (image != null)
                 //{
                 //    productItem.HinhAnh = image.Url_Img;
                 //}
+
 
                 if (xOffset + itemWidth > panel_Products.Width)
                 {
@@ -64,6 +64,35 @@ namespace GUI.ProductGUI
             }
 
             panel_Products.ResumeLayout();
+
+        }
+
+        private void ProductItem_DetailButtonClick(object sender, int maSP)
+        {
+            Form parentForm = this.FindForm();
+
+            Panel overlayPanel = new Panel
+            {
+                Size = parentForm.ClientSize,
+                Location = new Point(0, 0),
+                BackColor = Color.FromArgb(128, 0, 0, 0) 
+            };
+
+            parentForm.Controls.Add(overlayPanel);
+            overlayPanel.BringToFront(); 
+
+            FormProductDetail form = new FormProductDetail(maSP);
+
+            form.FormClosed += (s, args) =>
+            {
+                parentForm.Controls.Remove(overlayPanel); 
+            };
+
+            form.ShowDialog();
+        }
+
+        private void panel_Products_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

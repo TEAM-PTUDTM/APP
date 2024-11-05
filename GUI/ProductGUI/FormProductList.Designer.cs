@@ -93,6 +93,7 @@
             this.panel_Products.Name = "panel_Products";
             this.panel_Products.Size = new System.Drawing.Size(1454, 499);
             this.panel_Products.TabIndex = 24;
+            this.panel_Products.Paint += new System.Windows.Forms.PaintEventHandler(this.panel_Products_Paint);
             // 
             // guna2GradientTileButton2
             // 

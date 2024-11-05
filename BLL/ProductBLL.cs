@@ -15,6 +15,11 @@ namespace BLL
         {
             return productDAL.getProduct();
         }
+
+        public sanpham findByIdProduct(int id)
+        {
+            return productDAL.findByIdProduct(id);
+        }
         public bool deleteProduct(int id)
         {
             return productDAL.deleteProduct(id);

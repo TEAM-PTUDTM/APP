@@ -10,21 +10,27 @@ namespace DAL
 {
     public class ProductImage
     {
-        QLSHOPDataContext sql = new QLSHOPDataContext();
-        public List<hinhanh> getImageProduct()
+        private readonly QLSHOPDataContext sql = new QLSHOPDataContext();
+
+        public async Task<List<hinhanh>> getImageProduct()
         {
-            return sql.hinhanhs.Select(img => img).ToList<hinhanh>();
+            return await Task.Run(() => sql.hinhanhs.ToList());
         }
-        public hinhanh findByIdImageProduct(int id)
+
+        public async Task<hinhanh> findByIdImageProduct(int id)
         {
-            return sql.hinhanhs.Where(img => img.MaHinhAnh == id).FirstOrDefault();
+            return await Task.Run(() => sql.hinhanhs.FirstOrDefault(img => img.MaHinhAnh == id));
         }
-        public bool addImageProduct(hinhanh img)
+
+        public async Task<bool> addImageProduct(hinhanh img)
         {
             try
             {
-                sql.hinhanhs.InsertOnSubmit(img);
-                sql.SubmitChanges();
+                await Task.Run(() =>
+                {
+                    sql.hinhanhs.InsertOnSubmit(img);
+                    sql.SubmitChanges();
+                });
                 return true;
             }
             catch
@@ -33,13 +39,19 @@ namespace DAL
             }
         }
 
-        public bool deleteImageProduct(int id)
+        public async Task<bool> deleteImageProduct(int id)
         {
             try
             {
-                var image = findByIdImageProduct(id);
-                sql.hinhanhs.DeleteOnSubmit(image);
-                sql.SubmitChanges();
+                var image = await findByIdImageProduct(id);
+                if (image != null)
+                {
+                    await Task.Run(() =>
+                    {
+                        sql.hinhanhs.DeleteOnSubmit(image);
+                        sql.SubmitChanges();
+                    });
+                }
                 return true;
             }
             catch
@@ -47,13 +59,17 @@ namespace DAL
                 return false;
             }
         }
-        public bool updateImageProduct(hinhanh img)
+
+        public async Task<bool> updateImageProduct(hinhanh img)
         {
             try
             {
-                var image = findByIdImageProduct(img.MaHinhAnh);
-                image.Hinhanh1 = img.Hinhanh1;
-                sql.SubmitChanges();
+                var image = await findByIdImageProduct(img.MaHinhAnh);
+                if (image != null)
+                {
+                    image.Hinhanh1 = img.Hinhanh1;
+                    await Task.Run(() => sql.SubmitChanges());
+                }
                 return true;
             }
             catch
@@ -61,9 +77,10 @@ namespace DAL
                 return false;
             }
         }
-        public List<hinhanh> findByMaSP(int maSP)
+
+        public async Task<List<hinhanh>> findByMaSP(int maSP)
         {
-            return sql.hinhanhs.Where(img => img.MaSp == maSP).ToList<hinhanh>();
+            return await Task.Run(() => sql.hinhanhs.Where(img => img.MaSp == maSP).ToList());
         }
     }
 }

@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BLL">
+      <HintPath>..\BLL\bin\Debug\BLL.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
@@ -50,6 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UC_Image.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Image.Designer.cs">
+      <DependentUpon>UC_Image.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_ProductCart.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -58,6 +67,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="UC_Image.resx">
+      <DependentUpon>UC_Image.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC_ProductCart.resx">
       <DependentUpon>UC_ProductCart.cs</DependentUpon>
     </EmbeddedResource>

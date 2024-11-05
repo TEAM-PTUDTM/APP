@@ -8,3 +8,21 @@ D:\Application\component\obj\Debug\component.csproj.CoreCompileInputs.cache
 D:\Application\component\obj\Debug\component.csproj.Up2Date
 D:\Application\component\obj\Debug\component.dll
 D:\Application\component\obj\Debug\component.pdb
+D:\phát triển ứng dụng thông minh\Application\component\bin\Debug\component.dll
+D:\phát triển ứng dụng thông minh\Application\component\bin\Debug\component.pdb
+D:\phát triển ứng dụng thông minh\Application\component\bin\Debug\BLL.dll
+D:\phát triển ứng dụng thông minh\Application\component\bin\Debug\Guna.UI2.dll
+D:\phát triển ứng dụng thông minh\Application\component\bin\Debug\DAL.dll
+D:\phát triển ứng dụng thông minh\Application\component\bin\Debug\DTO.dll
+D:\phát triển ứng dụng thông minh\Application\component\bin\Debug\BLL.pdb
+D:\phát triển ứng dụng thông minh\Application\component\bin\Debug\DAL.pdb
+D:\phát triển ứng dụng thông minh\Application\component\bin\Debug\DTO.pdb
+D:\phát triển ứng dụng thông minh\Application\component\bin\Debug\DTO.dll.config
+D:\phát triển ứng dụng thông minh\Application\component\obj\Debug\component.csproj.AssemblyReference.cache
+D:\phát triển ứng dụng thông minh\Application\component\obj\Debug\component.UC_Image.resources
+D:\phát triển ứng dụng thông minh\Application\component\obj\Debug\component.UC_ProductCart.resources
+D:\phát triển ứng dụng thông minh\Application\component\obj\Debug\component.csproj.GenerateResource.cache
+D:\phát triển ứng dụng thông minh\Application\component\obj\Debug\component.csproj.CoreCompileInputs.cache
+D:\phát triển ứng dụng thông minh\Application\component\obj\Debug\component.csproj.Up2Date
+D:\phát triển ứng dụng thông minh\Application\component\obj\Debug\component.dll
+D:\phát triển ứng dụng thông minh\Application\component\obj\Debug\component.pdb

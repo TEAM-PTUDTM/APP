@@ -8,3 +8,13 @@ D:\Application\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 D:\Application\DAL\obj\Debug\DAL.csproj.Up2Date
 D:\Application\DAL\obj\Debug\DAL.dll
 D:\Application\DAL\obj\Debug\DAL.pdb
+D:\phát triển ứng dụng thông minh\Application\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+D:\phát triển ứng dụng thông minh\Application\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\phát triển ứng dụng thông minh\Application\DAL\bin\Debug\DAL.dll
+D:\phát triển ứng dụng thông minh\Application\DAL\bin\Debug\DAL.pdb
+D:\phát triển ứng dụng thông minh\Application\DAL\bin\Debug\DTO.dll
+D:\phát triển ứng dụng thông minh\Application\DAL\bin\Debug\DTO.pdb
+D:\phát triển ứng dụng thông minh\Application\DAL\bin\Debug\DTO.dll.config
+D:\phát triển ứng dụng thông minh\Application\DAL\obj\Debug\DAL.csproj.Up2Date
+D:\phát triển ứng dụng thông minh\Application\DAL\obj\Debug\DAL.dll
+D:\phát triển ứng dụng thông minh\Application\DAL\obj\Debug\DAL.pdb

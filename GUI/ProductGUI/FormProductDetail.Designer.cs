@@ -44,6 +44,8 @@
             this.btn_save = new Guna.UI2.WinForms.Guna2Button();
             this.Panel_Image = new Guna.UI2.WinForms.Guna2ShadowPanel();
             this.btn_create = new Guna.UI2.WinForms.Guna2GradientTileButton();
+            this.txt_Price = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_Sale = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -187,6 +189,7 @@
             this.btn_Cancel.Text = "CANCEL";
             this.btn_Cancel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btn_Cancel.UseTransparentBackground = true;
+            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
             // btn_delete
             // 
@@ -259,6 +262,7 @@
             this.Panel_Image.ShadowColor = System.Drawing.Color.Black;
             this.Panel_Image.Size = new System.Drawing.Size(333, 425);
             this.Panel_Image.TabIndex = 41;
+            this.Panel_Image.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Image_Paint);
             // 
             // btn_create
             // 
@@ -282,12 +286,61 @@
             this.btn_create.TabIndex = 40;
             this.btn_create.Text = "CREATE IMAGE";
             this.btn_create.UseTransparentBackground = true;
+            this.btn_create.Click += new System.EventHandler(this.btn_create_Click);
+            // 
+            // txt_Price
+            // 
+            this.txt_Price.BorderThickness = 0;
+            this.txt_Price.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Price.DefaultText = "";
+            this.txt_Price.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Price.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Price.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Price.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Price.Enabled = false;
+            this.txt_Price.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Price.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Price.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Price.Location = new System.Drawing.Point(506, 156);
+            this.txt_Price.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_Price.Name = "txt_Price";
+            this.txt_Price.PasswordChar = '\0';
+            this.txt_Price.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txt_Price.PlaceholderText = "";
+            this.txt_Price.SelectedText = "";
+            this.txt_Price.Size = new System.Drawing.Size(427, 33);
+            this.txt_Price.TabIndex = 54;
+            // 
+            // txt_Sale
+            // 
+            this.txt_Sale.BorderThickness = 0;
+            this.txt_Sale.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Sale.DefaultText = "";
+            this.txt_Sale.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Sale.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Sale.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Sale.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Sale.Enabled = false;
+            this.txt_Sale.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Sale.Font = new System.Drawing.Font("Verdana", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Sale.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Sale.Location = new System.Drawing.Point(505, 199);
+            this.txt_Sale.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_Sale.Name = "txt_Sale";
+            this.txt_Sale.PasswordChar = '\0';
+            this.txt_Sale.PlaceholderForeColor = System.Drawing.Color.Black;
+            this.txt_Sale.PlaceholderText = "";
+            this.txt_Sale.SelectedText = "";
+            this.txt_Sale.Size = new System.Drawing.Size(427, 33);
+            this.txt_Sale.TabIndex = 55;
             // 
             // FormProductDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(977, 552);
+            this.Controls.Add(this.txt_Sale);
+            this.Controls.Add(this.txt_Price);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textbox_Title);
             this.Controls.Add(this.label7);
@@ -305,7 +358,9 @@
             this.Controls.Add(this.btn_create);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormProductDetail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormProductDetail";
+            this.Load += new System.EventHandler(this.FormProductDetail_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -329,5 +384,7 @@
         private Guna.UI2.WinForms.Guna2Button btn_save;
         private Guna.UI2.WinForms.Guna2ShadowPanel Panel_Image;
         private Guna.UI2.WinForms.Guna2GradientTileButton btn_create;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Price;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Sale;
     }
 }

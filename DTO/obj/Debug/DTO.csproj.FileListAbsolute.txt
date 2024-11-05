@@ -5,3 +5,10 @@ D:\Application\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
 D:\Application\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Application\DTO\obj\Debug\DTO.dll
 D:\Application\DTO\obj\Debug\DTO.pdb
+D:\phát triển ứng dụng thông minh\Application\DTO\bin\Debug\DTO.dll.config
+D:\phát triển ứng dụng thông minh\Application\DTO\bin\Debug\DTO.dll
+D:\phát triển ứng dụng thông minh\Application\DTO\bin\Debug\DTO.pdb
+D:\phát triển ứng dụng thông minh\Application\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\phát triển ứng dụng thông minh\Application\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\phát triển ứng dụng thông minh\Application\DTO\obj\Debug\DTO.dll
+D:\phát triển ứng dụng thông minh\Application\DTO\obj\Debug\DTO.pdb
