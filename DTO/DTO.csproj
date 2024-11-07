@@ -68,6 +68,8 @@
       <LastGenOutput>QLSHOP.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
+  </ItemGroup>
+  <ItemGroup>
     <None Include="QLSHOP.dbml.layout">
       <DependentUpon>QLSHOP.dbml</DependentUpon>
     </None>

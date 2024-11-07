@@ -22,3 +22,15 @@ D:\phát triển ứng dụng thông minh\Application\BLL\bin\Debug\DTO.dll.conf
 D:\phát triển ứng dụng thông minh\Application\BLL\obj\Debug\BLL.csproj.Up2Date
 D:\phát triển ứng dụng thông minh\Application\BLL\obj\Debug\BLL.dll
 D:\phát triển ứng dụng thông minh\Application\BLL\obj\Debug\BLL.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\BLL\bin\Debug\BLL.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\BLL\bin\Debug\BLL.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\BLL\bin\Debug\DAL.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\BLL\bin\Debug\DTO.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\BLL\bin\Debug\DAL.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\BLL\bin\Debug\DTO.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\BLL\bin\Debug\DTO.dll.config
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\BLL\obj\Debug\BLL.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\BLL\obj\Debug\BLL.pdb

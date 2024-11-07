@@ -63,3 +63,38 @@ D:\phát triển ứng dụng thông minh\Application\GUI\obj\Debug\GUI.csproj.U
 D:\phát triển ứng dụng thông minh\Application\GUI\obj\Debug\GUI.exe
 D:\phát triển ứng dụng thông minh\Application\GUI\obj\Debug\GUI.pdb
 D:\phát triển ứng dụng thông minh\Application\GUI\bin\Debug\GUI.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\GUI.exe.config
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\GUI.exe
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\GUI.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\BLL.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\Cloudinary.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\CloudinaryDotNet.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\component.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\DTO.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\Guna.UI2.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\DAL.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\BLL.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\CloudinaryDotNet.xml
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\component.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\DTO.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\DTO.dll.config
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\bin\Debug\DAL.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.csproj.AssemblyReference.cache
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.CategoryGUI.FormCategoryType.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.CategoryGUI.FormCategory_Color.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.CategoryGUI.FormCategory_Size.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.LayoutGUI.FormCategoryLayout.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.LayoutGUI.FormMain.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.POS_GUI.FormPOS.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.ProductGUI.FormProductDetail.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.ProductGUI.FormProductDetailPOS.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.ProductGUI.FormProductList.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.ProductGUI.ProductDetailQuantity.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.Properties.Resources.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.csproj.CopyComplete
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.exe
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\GUI\obj\Debug\GUI.pdb

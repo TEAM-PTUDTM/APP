@@ -26,3 +26,21 @@ D:\phát triển ứng dụng thông minh\Application\component\obj\Debug\compon
 D:\phát triển ứng dụng thông minh\Application\component\obj\Debug\component.csproj.Up2Date
 D:\phát triển ứng dụng thông minh\Application\component\obj\Debug\component.dll
 D:\phát triển ứng dụng thông minh\Application\component\obj\Debug\component.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\bin\Debug\component.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\bin\Debug\component.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\bin\Debug\BLL.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\bin\Debug\Guna.UI2.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\bin\Debug\DAL.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\bin\Debug\DTO.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\bin\Debug\BLL.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\bin\Debug\DAL.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\bin\Debug\DTO.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\bin\Debug\DTO.dll.config
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\obj\Debug\component.csproj.AssemblyReference.cache
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\obj\Debug\component.UC_Image.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\obj\Debug\component.UC_ProductCart.resources
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\obj\Debug\component.csproj.GenerateResource.cache
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\obj\Debug\component.csproj.CoreCompileInputs.cache
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\obj\Debug\component.csproj.CopyComplete
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\obj\Debug\component.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\component\obj\Debug\component.pdb

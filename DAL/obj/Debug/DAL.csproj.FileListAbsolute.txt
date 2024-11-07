@@ -18,3 +18,13 @@ D:\phát triển ứng dụng thông minh\Application\DAL\bin\Debug\DTO.dll.conf
 D:\phát triển ứng dụng thông minh\Application\DAL\obj\Debug\DAL.csproj.Up2Date
 D:\phát triển ứng dụng thông minh\Application\DAL\obj\Debug\DAL.dll
 D:\phát triển ứng dụng thông minh\Application\DAL\obj\Debug\DAL.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\DAL\bin\Debug\DAL.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\DAL\bin\Debug\DAL.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\DAL\bin\Debug\DTO.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\DAL\bin\Debug\DTO.pdb
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\DAL\bin\Debug\DTO.dll.config
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\DAL\obj\Debug\DAL.dll
+C:\Users\AVITA\OneDrive\Desktop\PTUDTM_DOAN\APP\DAL\obj\Debug\DAL.pdb
