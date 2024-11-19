@@ -5,3 +5,10 @@ D:\Application\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
 D:\Application\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
 D:\Application\DTO\obj\Debug\DTO.dll
 D:\Application\DTO\obj\Debug\DTO.pdb
+D:\project\fullfi\APP\DTO\bin\Debug\DTO.dll.config
+D:\project\fullfi\APP\DTO\bin\Debug\DTO.dll
+D:\project\fullfi\APP\DTO\bin\Debug\DTO.pdb
+D:\project\fullfi\APP\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\project\fullfi\APP\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\project\fullfi\APP\DTO\obj\Debug\DTO.dll
+D:\project\fullfi\APP\DTO\obj\Debug\DTO.pdb

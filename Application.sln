@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "component", "component\component.csproj", "{6FA61458-FAF6-4206-8B94-C0B483F85677}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserControl", "DangNhap\UserControl.csproj", "{4AC84363-BB14-4158-AC30-6AC3DAE442E8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6FA61458-FAF6-4206-8B94-C0B483F85677}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FA61458-FAF6-4206-8B94-C0B483F85677}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FA61458-FAF6-4206-8B94-C0B483F85677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AC84363-BB14-4158-AC30-6AC3DAE442E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC84363-BB14-4158-AC30-6AC3DAE442E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC84363-BB14-4158-AC30-6AC3DAE442E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC84363-BB14-4158-AC30-6AC3DAE442E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

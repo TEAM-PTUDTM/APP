@@ -45,7 +45,10 @@
     <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AnalysisServices.AppLocal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.AnalysisServices.AppLocal.Tabular, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
@@ -91,6 +94,18 @@
     <Compile Include="LayoutGUI\FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="LayoutGUI\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LayoutGUI\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="nha\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="nha\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="POS_GUI\FormPOS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,8 +150,14 @@
     <EmbeddedResource Include="LayoutGUI\FormCategoryLayout.resx">
       <DependentUpon>FormCategoryLayout.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LayoutGUI\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LayoutGUI\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="nha\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="POS_GUI\FormPOS.resx">
       <DependentUpon>FormPOS.cs</DependentUpon>
@@ -208,6 +229,11 @@
     <Content Include="Resources\logo_login.jpg" />
     <Content Include="Resources\product_fashion.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DangNhap\UserControl.csproj">
+      <Project>{4AC84363-BB14-4158-AC30-6AC3DAE442E8}</Project>
+      <Name>UserControl</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,12 @@
+D:\project\fullfi\APP\DangNhap\bin\Debug\DangNhap.dll
+D:\project\fullfi\APP\DangNhap\bin\Debug\DangNhap.pdb
+D:\project\fullfi\APP\DangNhap\obj\Debug\UserControl.csproj.AssemblyReference.cache
+D:\project\fullfi\APP\DangNhap\obj\Debug\DangNhap.uc_DangNhap.resources
+D:\project\fullfi\APP\DangNhap\obj\Debug\UserControl.csproj.GenerateResource.cache
+D:\project\fullfi\APP\DangNhap\obj\Debug\UserControl.csproj.CoreCompileInputs.cache
+D:\project\fullfi\APP\DangNhap\obj\Debug\DangNhap.dll
+D:\project\fullfi\APP\DangNhap\obj\Debug\DangNhap.pdb
+D:\project\fullfi\APP\DangNhap\bin\Debug\DTO.dll
+D:\project\fullfi\APP\DangNhap\bin\Debug\DTO.pdb
+D:\project\fullfi\APP\DangNhap\bin\Debug\DTO.dll.config
+D:\project\fullfi\APP\DangNhap\obj\Debug\UserControl.csproj.CopyComplete

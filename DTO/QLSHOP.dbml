@@ -1,17 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLSHOP" Class="QLSHOPDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=NGUYENVANVUONG;Initial Catalog=QLSHOP;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="DTO.Properties.Settings" SettingsPropertyName="QLSHOPConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.chitietsanpham" Member="chitietsanphams">
-    <Type Name="chitietsanpham">
-      <Column Name="MaChiTiet" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="MaSP" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MaKichThuoc" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="MaMau" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="SoLuongTon" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Association Name="chitietsanpham_chitietdonhang" Member="chitietdonhangs" ThisKey="MaChiTiet" OtherKey="MaChiTietSanPham" Type="chitietdonhang" />
-      <Association Name="chitietsanpham_giohang" Member="giohangs" ThisKey="MaChiTiet" OtherKey="MaChiTietSanPham" Type="giohang" />
-      <Association Name="kichthuoc_chitietsanpham" Member="kichthuoc" ThisKey="MaKichThuoc" OtherKey="MaKichThuoc" Type="kichthuoc" IsForeignKey="true" />
-      <Association Name="mausac_chitietsanpham" Member="mausac" ThisKey="MaMau" OtherKey="MaMau" Type="mausac" IsForeignKey="true" />
-      <Association Name="sanpham_chitietsanpham" Member="sanpham" ThisKey="MaSP" OtherKey="MaSP" Type="sanpham" IsForeignKey="true" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-S5FI7AHK\SQLEXPRESS12;Initial Catalog=QLSHOP;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="DTO.Properties.Settings" SettingsPropertyName="QLSHOPConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.cache" Member="caches">
+    <Type Name="cache">
+      <Column Name="[key]" Member="key" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="value" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="expiration" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.voucher_khachhang" Member="voucher_khachhangs">
+    <Type Name="voucher_khachhang">
+      <Column Name="MaKH" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="MA_VOUCHER" Type="System.String" DbType="Char(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="note" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Association Name="khachhang_voucher_khachhang" Member="khachhang" ThisKey="MaKH" OtherKey="MaKH" Type="khachhang" IsForeignKey="true" />
+      <Association Name="voucher_voucher_khachhang" Member="voucher" ThisKey="MA_VOUCHER" OtherKey="MA_VOUCHER" Type="voucher" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.cache_locks" Member="cache_locks">
+    <Type Name="cache_lock">
+      <Column Name="[key]" Member="key" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="owner" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="expiration" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.chitietdonhang" Member="chitietdonhangs">
@@ -24,6 +33,20 @@
       <Association Name="chitietdonhang_feedback" Member="feedbacks" ThisKey="MaChiTiet" OtherKey="MaChiTietDH" Type="feedback" />
       <Association Name="chitietsanpham_chitietdonhang" Member="chitietsanpham" ThisKey="MaChiTietSanPham" OtherKey="MaChiTiet" Type="chitietsanpham" IsForeignKey="true" />
       <Association Name="donhang_chitietdonhang" Member="donhang" ThisKey="MaDonHang" OtherKey="MaDonHang" Type="donhang" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.chitietsanpham" Member="chitietsanphams">
+    <Type Name="chitietsanpham">
+      <Column Name="MaChiTiet" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="MaSP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaKichThuoc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="MaMau" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SoLuongTon" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="chitietsanpham_chitietdonhang" Member="chitietdonhangs" ThisKey="MaChiTiet" OtherKey="MaChiTietSanPham" Type="chitietdonhang" />
+      <Association Name="chitietsanpham_giohang" Member="giohangs" ThisKey="MaChiTiet" OtherKey="MaChiTietSanPham" Type="giohang" />
+      <Association Name="kichthuoc_chitietsanpham" Member="kichthuoc" ThisKey="MaKichThuoc" OtherKey="MaKichThuoc" Type="kichthuoc" IsForeignKey="true" />
+      <Association Name="mausac_chitietsanpham" Member="mausac" ThisKey="MaMau" OtherKey="MaMau" Type="mausac" IsForeignKey="true" />
+      <Association Name="sanpham_chitietsanpham" Member="sanpham" ThisKey="MaSP" OtherKey="MaSP" Type="sanpham" IsForeignKey="true" />
     </Type>
   </Table>
   <Table Name="dbo.danhmuc" Member="danhmucs">
@@ -50,6 +73,17 @@
       <Column Name="RecipientPhone" Type="System.String" DbType="NVarChar(13)" CanBeNull="true" />
       <Association Name="donhang_chitietdonhang" Member="chitietdonhangs" ThisKey="MaDonHang" OtherKey="MaDonHang" Type="chitietdonhang" />
       <Association Name="khachhang_donhang" Member="khachhang" ThisKey="MaKhachHang" OtherKey="MaKH" Type="khachhang" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.failed_jobs" Member="failed_jobs">
+    <Type Name="failed_job">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="uuid" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="connection" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="queue" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="payload" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="exception" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="failed_at" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.feedback" Member="feedbacks">
@@ -82,6 +116,31 @@
       <Association Name="sanpham_hinhanh" Member="sanpham" ThisKey="MaSp" OtherKey="MaSP" Type="sanpham" IsForeignKey="true" />
     </Type>
   </Table>
+  <Table Name="dbo.job_batches" Member="job_batches">
+    <Type Name="job_batch">
+      <Column Name="id" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="total_jobs" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="pending_jobs" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="failed_jobs" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="failed_job_ids" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="options" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="cancelled_at" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="created_at" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="finished_at" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.jobs" Member="jobs">
+    <Type Name="job">
+      <Column Name="id" Type="System.Int64" DbType="BigInt NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="queue" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="payload" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="attempts" Type="System.Byte" DbType="TinyInt NOT NULL" CanBeNull="false" />
+      <Column Name="reserved_at" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="available_at" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="created_at" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
   <Table Name="dbo.kichthuoc" Member="kichthuocs">
     <Type Name="kichthuoc">
       <Column Name="MaKichThuoc" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -101,10 +160,10 @@
       <Column Name="TrangThai" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
       <Column Name="avatar" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
       <Column Name="Role" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
+      <Association Name="khachhang_voucher_khachhang" Member="voucher_khachhangs" ThisKey="MaKH" OtherKey="MaKH" Type="voucher_khachhang" />
       <Association Name="khachhang_donhang" Member="donhangs" ThisKey="MaKH" OtherKey="MaKhachHang" Type="donhang" />
       <Association Name="khachhang_feedback" Member="feedbacks" ThisKey="MaKH" OtherKey="MaKH" Type="feedback" />
       <Association Name="khachhang_giohang" Member="giohangs" ThisKey="MaKH" OtherKey="MaKhachHang" Type="giohang" />
-      <Association Name="khachhang_voucher_khachhang" Member="voucher_khachhangs" ThisKey="MaKH" OtherKey="MaKH" Type="voucher_khachhang" />
     </Type>
   </Table>
   <Table Name="dbo.mausac" Member="mausacs">
@@ -113,6 +172,20 @@
       <Column Name="TenMau" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
       <Column Name="HEXCODE" Type="System.String" DbType="Char(11) NOT NULL" CanBeNull="false" />
       <Association Name="mausac_chitietsanpham" Member="chitietsanphams" ThisKey="MaMau" OtherKey="MaMau" Type="chitietsanpham" />
+    </Type>
+  </Table>
+  <Table Name="dbo.migrations" Member="migrations">
+    <Type Name="migration">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="migration" Member="migration1" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="batch" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.password_reset_tokens" Member="password_reset_tokens">
+    <Type Name="password_reset_token">
+      <Column Name="email" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="token" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="created_at" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.sanpham" Member="sanphams">
@@ -128,6 +201,16 @@
       <Association Name="sanpham_chitietsanpham" Member="chitietsanphams" ThisKey="MaSP" OtherKey="MaSP" Type="chitietsanpham" />
       <Association Name="sanpham_hinhanh" Member="hinhanhs" ThisKey="MaSP" OtherKey="MaSp" Type="hinhanh" />
       <Association Name="danhmuc_sanpham" Member="danhmuc" ThisKey="MaDanhMuc" OtherKey="MaDanhMuc" Type="danhmuc" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.sessions" Member="sessions">
+    <Type Name="session">
+      <Column Name="id" Type="System.String" DbType="NVarChar(255) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="user_id" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="ip_address" Type="System.String" DbType="NVarChar(45)" CanBeNull="true" />
+      <Column Name="user_agent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="payload" Type="System.String" DbType="NVarChar(MAX) NOT NULL" CanBeNull="false" />
+      <Column Name="last_activity" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.users" Member="users">
@@ -153,15 +236,6 @@
       <Column Name="Ngaybatdau" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="Ngayketthuc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Association Name="voucher_voucher_khachhang" Member="voucher_khachhangs" ThisKey="MA_VOUCHER" OtherKey="MA_VOUCHER" Type="voucher_khachhang" />
-    </Type>
-  </Table>
-  <Table Name="dbo.voucher_khachhang" Member="voucher_khachhangs">
-    <Type Name="voucher_khachhang">
-      <Column Name="MaKH" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="MA_VOUCHER" Type="System.String" DbType="Char(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="note" Type="System.String" DbType="NVarChar(15)" CanBeNull="true" />
-      <Association Name="voucher_voucher_khachhang" Member="voucher" ThisKey="MA_VOUCHER" OtherKey="MA_VOUCHER" Type="voucher" IsForeignKey="true" />
-      <Association Name="khachhang_voucher_khachhang" Member="khachhang" ThisKey="MaKH" OtherKey="MaKH" Type="khachhang" IsForeignKey="true" />
     </Type>
   </Table>
 </Database>
