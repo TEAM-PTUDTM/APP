@@ -396,8 +396,8 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-DTO/laptop.dbml
-DTO/laptop.dbml.layout
-DTO/laptop.designer.cs
+DTO/QLSHOP.dbml
+DTO/QLSHOP.dbml.layout
+DTO/QLSHOP.designer.cs
 DTO/Properties/Settings.Designer.cs
 DTO/Properties/Settings.settings
